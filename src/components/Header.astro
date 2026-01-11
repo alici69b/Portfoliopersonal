@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Alicia Alonso</title>
+  </head>
+  <body>
+    <section class="inicio">
+      <div class="inicio-contenedor">
+        <p class="bienvenida">¡Bienvenido a mi porfolio!</p>
+      </div>
+
+      <div class="inicio-principal">
+        <h2 class="quiensoy">Soy <b class="bienvenidas">Alicia Alonso</b></h2>
+
+        <div class="descripcion">
+          <p class="quesoy">Desarrolladora de aplicaciones web</p>
+          <p>
+            Diseño experiencias digitales cuidando cada detalle, buscando
+            siempre el equilibrio entre lo visual y lo funcional para crear algo
+            bonito, claro y útil.
+          </p>
+        </div>
+
+        <div class="botones">
+          <a class="btn-git" href="https://github.com/alici69b" target="_blank">
+            <img src="../public/muñecogit.png" alt="" />GitHub
+          </a>
+
+          <a
+            class="btn-Link"
+            href="https://www.linkedin.com/in/alicia-alonso-aguaded-5236933a3/"
+            target="_blank"
+          >
+            <img src="../public/muñeco linkedin.png" alt="" />LinkedIn
+          </a>
+        </div>
+
+        <div class="flecha">
+          <img src="../public/bottom-svgrepo-com.svg" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<style>
+  * {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .inicio {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .inicio-contenedor {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .bienvenida {
+    background-color: #7ed2e93e;
+    color: #005d7a;
+    padding: 0.6rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+  }
+
+  .inicio-principal {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 1.5rem;
+    text-align: center;
+  }
+
+  .quiensoy {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem;
+  }
+
+  .bienvenidas {
+    color: #005d7a;
+  }
+
+  .descripcion {
+    max-width: 650px;
+    margin: auto;
+    color: #666666;
+  }
+
+  .quesoy {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .botones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+
+  .btn-git,
+  .btn-Link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition:
+      transform 0.3s ease,
+      background-color 0.3s ease;
+  }
+
+  .btn-git {
+    background-color: #005d7a;
+    color: white;
+  }
+
+  .btn-Link {
+    border: 1px solid #005d7a;
+    color: #005d7a;
+  }
+
+  .btn-git img,
+  .btn-Link img {
+    width: 20px;
+  }
+
+  .btn-git:hover,
+  .btn-Link:hover {
+    transform: scale(1.08);
+  }
+
+  .btn-Link:hover {
+    background-color: #005d7a;
+    color: white;
+  }
+
+  .flecha {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+
+  .flecha img {
+    width: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    animation: botar 1s ease infinite;
+  }
+
+  @keyframes botar {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Medidas en movil y tablets */
+  @media (min-width: 768px) {
+    .quiensoy {
+      font-size: 3.5rem;
+    }
+
+    .bienvenida {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .quiensoy {
+      font-size: 4rem;
+    }
+  }
+</style>

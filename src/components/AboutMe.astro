@@ -1,0 +1,168 @@
+<section class="sobremi">
+  <h2>Sobre <b>Mí</b></h2>
+
+  <p class="sobremi-texto">
+    Soy Alicia, desarrolladora web enfocada en crear experiencias digitales
+    claras y funcionales. Trabajo con HTML5, CSS, PHP y Astro, cuidando tanto el
+    diseño como la estructura del código. Me motiva aprender de forma constante
+    y construir proyectos bien pensados.
+  </p>
+
+  <div class="contenedor-sobremi">
+    <div class="algomas">
+      <div class="box">
+        <img src="../public/Frontend.svg" alt="" />
+        <p><b>Frontend</b></p>
+        <div class="mini-box">
+          <p>HTML5</p>
+          <p>CSS</p>
+          <p>Astro</p>
+          <p>Responsive Design</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="../public/Backend.svg" alt="" />
+        <p><b>Backend</b></p>
+        <div class="mini-box">
+          <p>PHP</p>
+          <p>Gestión de formularios</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="../public/Base-dato.svg" alt="" />
+        <p><b>Bases de Datos</b></p>
+        <div class="mini-box">
+          <p>MySQL</p>
+          <p>Diseño de Base de Datos</p>
+          <p>Consultas SQL Básicas</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="../public/Herramienta.svg" alt="" />
+        <p><b>Herramientas</b></p>
+        <div class="mini-box">
+          <p>Visual Studio Code</p>
+          <p>GitHub</p>
+          <p>LinkedIn</p>
+          <p>Hosting básico</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  * {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .sobremi {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .sobremi h2 {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem;
+  }
+
+  .sobremi b {
+    color: #005d7a;
+  }
+
+  .sobremi-texto {
+    max-width: 700px;
+    margin: 1.5rem auto 3rem;
+    color: #666666;
+    font-size: large;
+  }
+
+  .contenedor-sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 1.5rem;
+  }
+
+
+  .algomas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+  }
+
+ 
+  .box {
+    color: black;
+    border: 1px solid #c8c8c8;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s ease;
+    text-align: left;
+  }
+
+  .box img {
+    width: 50px;
+    margin-bottom: 0.5rem;
+  }
+
+  .box:hover {
+    border-color: #005d7a;
+    box-shadow: 0px 0px 30px #66666641;
+    transform: translateY(-5px);
+  }
+
+
+  .mini-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 0.8rem;
+  }
+
+  .mini-box p {
+    font-size: small;
+    border-radius: 10px;
+    background-color: #e3e3e3;
+    padding: 4px 10px;
+  }
+
+  .mini-box p:hover {
+    background-color: #005d7a;
+    color: white;
+    cursor: default;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .sobremi-texto {
+      font-size: medium;
+      padding: 0 1rem;
+    }
+
+    .box img {
+      width: 40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .sobremi-texto {
+      font-size: small;
+    }
+  }
+</style>

@@ -1,0 +1,185 @@
+<section class="proyectos">
+  <h2>Proyectos <b>Destacados</b></h2>
+  <p class="proyectos-subtitulo">Algunos de mis proyectos destacados:</p>
+
+  <div class="proyectos-grid">
+    <article class="tarjeta-proyecto">
+      <div class="imagen-proyecto">
+        <img src="../public/Proyecto-portfolio.webp" alt="" />
+        <div class="botones-proyectos">
+          <!-- poner direccion del boton -->
+          <a href="#" class="boton">Ver Proyecto</a>
+        </div>
+      </div>
+
+      <h3>Porfolio</h3>
+      <p>
+        Portfolio personal desarrollado con Astro, HTML y CSS, con diseño
+        responsive y enfoque en la experiencia de usuario.
+      </p>
+
+      <div class="etiquetas-proyecto">
+        <p>Astro</p>
+        <p>HTML5</p>
+        <p>CSS</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<style>
+  * {
+    font-family:
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Oxygen,
+      Ubuntu,
+      Cantarell,
+      "Open Sans",
+      "Helvetica Neue",
+      sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .proyectos {
+    margin: auto;
+    margin-top: 2%;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    background-color: #eeeeeea3;
+    border: 1px solid #eeeeeedc ;
+    
+  }
+
+  .proyectos h2 {
+    font-size: 2.5rem;
+    margin: 2rem 0 1rem;
+  }
+
+  .proyectos h2 b {
+    color: #005d7a;
+  }
+
+  .proyectos-subtitulo {
+    color: #bab8b8;
+    font-size: large;
+    margin: 1rem auto 3rem;
+    max-width: 600px;
+  }
+
+  .proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .tarjeta-proyecto {
+    background: #ffffff;
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.3s ease;
+    border: 1px solid #c8c8c8;
+    border-radius: 10px;
+  }
+
+  .tarjeta-proyecto:hover {
+    border-color: #005d7a;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 30px #66666641;
+  }
+
+  .imagen-proyecto {
+    height: 170px;
+    background: #334155;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imagen-proyecto img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  .botones-proyectos {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .tarjeta-proyecto:hover .botones-proyectos {
+    opacity: 1;
+  }
+
+  .boton {
+    background: #ffffff;
+    color: #0f172a;
+    padding: 0.45rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .tarjeta-proyecto h3 {
+    margin-top: 1rem;
+    color: #005d7a;
+  }
+
+  .tarjeta-proyecto p {
+    font-size: 0.95rem;
+    color: #64748b;
+  }
+
+  .etiquetas-proyecto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 0.8rem;
+  }
+
+  .etiquetas-proyecto p {
+    color: black;
+    font-size: small;
+    border-radius: 10px;
+    background-color: #e3e3e3;
+    padding: 4px 10px;
+  }
+
+  .etiquetas-proyecto > p:hover {
+    background-color: #005d7a;
+    color: white;
+    cursor: default;
+  }
+
+  .etiquetas-proyecto div {
+    background: #e0f2fe;
+    color: #005d7a;
+    padding: 0.25rem 0.7rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+  }
+
+  /* Medidas para movil, tablet,.. */
+  @media (max-width: 600px) {
+    .botones-proyectos {
+      opacity: 1;
+      background: rgba(15, 23, 42, 0.45);
+    }
+  }
+</style>
