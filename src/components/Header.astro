@@ -1,199 +1,55 @@
-<section class="inicio">
-  <div class="inicio-contenedor">
-    <p class="bienvenida">¡Bienvenido a mi porfolio!</p>
+<section class="inicio font-sans my-40 px-6 text-center">
+  <div class="inicio-contenedor flex justify-center mx-8">
+    <p
+      class="bienvenida bg-[#7ed2e93e] text-[#005d7a] px-6 py-2.5 rounded-[30px] text-[1.1rem]"
+    >
+      ¡Bienvenido a mi porfolio!
+    </p>
   </div>
 
-    <h2 class="quiensoy">
-      Soy <b class="bienvenidas">Alicia Alonso</b>
-    </h2>
+  <h2 class="quiensoy text-[3.5rem] my-1">
+    <b>Soy <b class="nombre text-[#005d7a]">Alicia Alonso</b></b>
+  </h2>
 
-    <div class="descripcion">
-      <p class="quesoy">Desarrolladora de aplicaciones web</p>
-      <p>
-        Diseño experiencias digitales cuidando cada detalle, buscando siempre el
-        equilibrio entre lo visual y lo funcional.
-      </p>
-    </div>
-    <div class="botones">
-      <div class="botones-redessociales">
-        <a
-          class="btn github"
-          href="https://github.com/alici69b"
-          target="_blank"
-        >
-          <img src="/github-svgrepo-com.svg" alt="" />
-          GitHub
-        </a>
+  <div class="descripcion max-w-2xl mt-0 mx-auto mb-8 text-[#666] text-lg">
+    <p class="quesoy m-2 text-[#666] text-[23px]">
+      Desarrolladora de aplicaciones web
+    </p>
+    <p>
+      Diseño experiencias digitales cuidando cada detalle, buscando siempre el
+      equilibrio entre lo visual y lo funcional.
+    </p>
+  </div>
+  <div class="botones flex flex-col gap-4 items-center">
+    <div class="botones-redessociales flex gap-4 flex-wrap justify-center">
+      <a
+        href="https://github.com/alici69b"
+        target="_blank"
+        class="inline-flex items-center gap-2 px-6 py-2.5 rounded-[30px] no-underline text-white bg-[#005d7a] transition-all duration-300 ease-in-out whitespace-nowrap hover:bg-[#005d7a] hover:text-white hover:scale-105"
+      >
+        <img src="/github-svgrepo-com.svg" alt="" class="w-4.5 h-4.5" />
+        GitHub
+      </a>
 
-        <a
-          class="btn linkedin"
-          href="https://www.linkedin.com/in/alicia-alonso-aguaded-5236933a3/"
-          target="_blank"
-        >
-          <img src="/linkedin-svgrepo-com.svg" alt="" />
-          LinkedIn
-        </a>
-      </div>
-
-      <a 
-      class="btn cv" 
-      href="/CURRICULUM VITAE.pdf" 
-      download="/ALONSO_AGUADED_ALICIA_CURRICULUMVITAE.pdf"
-      target="_blank">
-        <img src="/curriculum-resume-svgrepo-com.svg" alt="" />
-        Descargar CV
+      <a
+        href="https://www.linkedin.com/in/alicia-alonso-aguaded-5236933a3/"
+        target="_blank"
+        class="inline-flex items-center gap-2 px-6 py-2.5 rounded-[30px] no-underline text-[#005d7a] border border-[#005d7a] transition-all duration-300 ease-in-out whitespace-nowrap hover:bg-[#005d7a] hover:text-white hover:scale-105 "
+      >
+        <img src="/linkedin-svgrepo-com.svg" alt="" class="w-4.5 h-4.5" />
+        LinkedIn
       </a>
     </div>
-    <div class="flecha"><img src="/bottom-svgrepo-com.svg" alt="" /></div>
+
+    <a
+      class="btn cv inline-flex items-center gap-2 px-6 py-2.5 rounded-[30px] no-underline text-[0.95rem] text-[#333] bg-[#f2f2f2] transition-all duration-300 ease-in-out whitespace-nowrap hover:bg-[#7ed2e93e] hover:text-[#005d7a] hover:scale-105"
+      href="/CURRICULUM VITAE.pdf"
+      download="/ALONSO_AGUADED_ALICIA_CURRICULUMVITAE.pdf"
+      target="_blank"
+    >
+      <img src="/curriculum-resume-svgrepo-com.svg" class="w-4.5 h-4.5" />
+      Descargar CV
+    </a>
+  </div>
+  <div class="flecha flex justify-center mt-6"><img src="/bottom-svgrepo-com.svg" class="w-15.5 h-20 justify-center items-center animate-bounce" /></div>
 </section>
-
-<style>
-  * {
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .inicio {
-    padding: 6rem 1.5rem;
-    text-align: center;
-  }
-
-  .inicio-contenedor {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-  }
-
-  .bienvenida {
-    background-color: #7ed2e93e;
-    color: #005d7a;
-    padding: 0.6rem 1.5rem;
-    border-radius: 20px;
-    font-size: 1.1rem;
-  }
-
-  .quiensoy {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .bienvenidas {
-    color: #005d7a;
-  }
-
-  .descripcion {
-    max-width: 700px;
-    margin: 0 auto 2rem;
-    color: #666;
-    font-size: large;
-  }
-
-  .descripcion > .quesoy {
-    max-width: 700px;
-    margin: 0.5rem;
-    color: #666;
-    font-size: 23px;
-  }
-
-  .botones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .botones-redessociales {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.6rem 1.4rem;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-  }
-
-  .btn img {
-    width: 18px;
-    height: 18px;
-  }
-
-  .github {
-    background-color: #005d7a;
-    color: white;
-  }
-
-  .linkedin {
-    border: 1px solid #005d7a;
-    color: #005d7a;
-  }
-
-  .cv {
-    background-color: #f2f2f2;
-    color: #333;
-    font-size: 0.95rem;
-  }
-
-  .btn:hover {
-    transform: scale(1.06);
-  }
-
-  .linkedin:hover {
-    background-color: #005d7a;
-    color: white;
-  }
-
-  .cv:hover {
-    background-color: #7ed2e93e;
-    color: #005d7a;
-  }
-
-  .flecha {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
-  }
-  .flecha img {
-    width: 50px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    animation: botar 1s ease infinite;
-  }
-  @keyframes botar {
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-
-  /* RESPONSIVE */
-  @media (min-width: 768px) {
-    .quiensoy {
-      font-size: 3.5rem;
-    }
-  }
-</style>

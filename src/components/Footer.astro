@@ -1,112 +1,32 @@
-<footer class="pie_pagina">
-  <div class="botones">
+<footer class="pie_pagina flex flex-row flex-wrap justify-around items-center py-8 px-4 font-sans max-md:flex-col max-md:text-center max-md:gap-4 max-md:py-6">
+  
+  <div class="botones flex gap-2 max-md:order-1">
     <a
-      class="btn-git"
       href="https://github.com/alici69b"
       target="_blank"
       aria-label="GitHub"
+      class="flex justify-center items-center w-12.5 h-12.5 rounded-full bg-[#dfdedee8] transition-colors duration-300 hover:bg-[#005d7a]"
     >
-      <img src="/github-svgrepo-com.svg" alt="GitHub Logo" class="icon-img" />
+      <img src="/github-svgrepo-com.svg" alt="GitHub Logo" class="w-7.5 h-7.5 object-contain" />
     </a>
 
     <a
-      class="btn-Link"
       href="https://www.linkedin.com/in/alicia-alonso-aguaded-5236933a3/"
       target="_blank"
       aria-label="LinkedIn"
+      class="flex justify-center items-center w-12.5 h-12.5 rounded-full bg-[#dfdedee8] transition-colors duration-300 hover:bg-[#005d7a]"
     >
-      <img
-        src="/linkedin-svgrepo-com.svg"
-        alt="LinkedIn Logo"
-        class="icon-img"
-      />
+      <img src="/linkedin-svgrepo-com.svg" alt="LinkedIn Logo" class="w-7.5 h-7.5 object-contain" />
     </a>
   </div>
 
   <div class="creador">
-    <p>2026 <b>Alicia Alonso Aguaded</b></p>
+    <p class="text-[#333] text-[0.9rem]">
+      2026 <b class="text-[#005d7a]">Alicia Alonso Aguaded</b>
+    </p>
   </div>
 
   <div class="derechos">
-    <p>© Todos los derechos reservados</p>
+    <p class="text-[#333] text-[0.9rem]">© Todos los derechos reservados</p>
   </div>
 </footer>
-
-<style>
-  * {
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .pie_pagina {
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .botones {
-    display: flex;
-    gap: 0.5rem;
-  }
-  .btn-git,
-  .btn-Link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #dfdedee8;
-    transition: background-color 0.3s ease;
-  }
-
-  .btn-Link:hover,
-  .btn-git:hover {
-    background-color: #005d7a;
-  }
-
-  .icon-img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-  }
-
-  .creador p,
-  .derechos p {
-    color: #333;
-    font-size: 0.9rem;
-  }
-
-  .creador p > b {
-    color: #005d7a;
-  }
-
-  /* --- Responsive para moviles y tablets --- */
-  @media (max-width: 768px) {
-    .pie_pagina {
-      flex-direction: column;
-      text-align: center;
-      gap: 1rem;
-      padding: 1.5rem 1rem;
-    }
-
-    .botones {
-      order: 1;
-    }
-  }
-</style>

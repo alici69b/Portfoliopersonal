@@ -1,185 +1,37 @@
-<section class="proyectos">
-  <h2>Proyectos <b>Destacados</b></h2>
-  <p class="proyectos-subtitulo">Algunos de mis proyectos destacados:</p>
+<section class="proyectos font-sans py-16 px-6 text-center bg-[#eeeeeea3] border border-[#eeeeeedc] mt-[2%] mx-auto">
+  <h2 class="text-[2.5rem] mt-8 mb-4">
+    <b> Proyectos <b class="text-[#005d7a]">Destacados</b></b>
+  </h2>
+  <p class="proyectos-subtitulo text-[#bab8b8] text-lg mt-4 mb-12 mx-auto max-w-150">
+    Algunos de mis proyectos destacados:
+  </p>
 
-  <div class="proyectos-grid">
-    <article class="tarjeta-proyecto">
-      <div class="imagen-proyecto">
-        <img src="/Proyecto-portfolio.webp" alt="" />
-        <div class="botones-proyectos">
-          <a href="https://github.com/alici69b/Portfoliopersonal" target="_blank" class="boton">Ver Repositorio</a>
-          <a href="https://aliciaalonsoportfolio.netlify.app/" target="_blank" class="boton">Ver Proyecto</a>
+  <div class="proyectos-grid grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8 max-w-275 mx-auto">
+    
+    <article class="tarjeta-proyecto group bg-white p-6 text-left border border-[#c8c8c8] rounded-[10px] transition-all duration-300 hover:border-[#005d7a] hover:-translate-y-1.25 hover:shadow-[0_0_30px_#66666641]">
+      
+      <div class="imagen-proyecto relative h-42.5 bg-[#334155] rounded-[15px] overflow-hidden flex items-center justify-center">
+        <img src="/Proyecto-portfolio.webp" alt="Portfolio" class="w-full h-auto transition-transform duration-500 group-hover:scale-105" />
+        
+        <div class="botones-proyectos absolute inset-0 bg-[#0f172a]/65 flex items-center justify-center gap-[0.7rem] opacity-0 transition-opacity duration-300 group-hover:opacity-100 max-[600px]:opacity-100 max-[600px]:bg-[#0f172a]/45">
+          <a href="https://github.com/alici69b/Portfoliopersonal" target="_blank" class="boton bg-white text-[#0f172a] px-4 py-[0.45rem] rounded-[20px] no-underline text-[0.85rem] font-medium hover:bg-[#005d7a] hover:text-white transition-colors">Ver Repositorio</a>
+          <a href="https://aliciaalonsoportfolio.netlify.app/" target="_blank" class="boton bg-white text-[#0f172a] px-4 py-[0.45rem] rounded-[20px] no-underline text-[0.85rem] font-medium hover:bg-[#005d7a] hover:text-white transition-colors">Ver Proyecto</a>
         </div>
       </div>
 
-      <h3>Porfolio</h3>
-      <p>
+      <h3 class="mt-4 text-[#005d7a] font-bold text-lg">Porfolio</h3>
+      <p class="text-[0.95rem] text-[#64748b] mt-2">
         Portfolio personal desarrollado con Astro, HTML y CSS, con diseño
         responsive y enfoque en la experiencia de usuario.
       </p>
 
-      <div class="etiquetas-proyecto">
-        <p>Astro</p>
-        <p>HTML5</p>
-        <p>CSS</p>
+      <div class="etiquetas-proyecto flex flex-wrap gap-1.5 mt-[0.8rem]">
+        <span class="text-black text-sm rounded-[10px] bg-[#e3e3e3] px-2.5 py-1 transition-colors hover:bg-[#005d7a] hover:text-white cursor-default">Astro</span>
+        <span class="text-black text-sm rounded-[10px] bg-[#e3e3e3] px-2.5 py-1 transition-colors hover:bg-[#005d7a] hover:text-white cursor-default">HTML5</span>
+        <span class="text-black text-sm rounded-[10px] bg-[#e3e3e3] px-2.5 py-1 transition-colors hover:bg-[#005d7a] hover:text-white cursor-default">CSS</span>
       </div>
+
     </article>
+
   </div>
 </section>
-
-<style>
-  * {
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .proyectos {
-    margin: auto;
-    margin-top: 2%;
-    padding: 4rem 1.5rem;
-    text-align: center;
-    background-color: #eeeeeea3;
-    border: 1px solid #eeeeeedc ;
-    
-  }
-
-  .proyectos h2 {
-    font-size: 2.5rem;
-    margin: 2rem 0 1rem;
-  }
-
-  .proyectos h2 b {
-    color: #005d7a;
-  }
-
-  .proyectos-subtitulo {
-    color: #bab8b8;
-    font-size: large;
-    margin: 1rem auto 3rem;
-    max-width: 600px;
-  }
-
-  .proyectos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1100px;
-    margin: auto;
-  }
-
-  .tarjeta-proyecto {
-    background: #ffffff;
-    padding: 1.5rem;
-    text-align: left;
-    transition: transform 0.3s ease;
-    border: 1px solid #c8c8c8;
-    border-radius: 10px;
-  }
-
-  .tarjeta-proyecto:hover {
-    border-color: #005d7a;
-    transform: translateY(-5px);
-    box-shadow: 0px 0px 30px #66666641;
-  }
-
-  .imagen-proyecto {
-    height: 170px;
-    background: #334155;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .imagen-proyecto img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s ease;
-  }
-  .botones-proyectos {
-    position: absolute;
-    inset: 0;
-    background: rgba(15, 23, 42, 0.65);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.7rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  .tarjeta-proyecto:hover .botones-proyectos {
-    opacity: 1;
-  }
-
-  .boton {
-    background: #ffffff;
-    color: #0f172a;
-    padding: 0.45rem 1rem;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 500;
-  }
-
-  .tarjeta-proyecto h3 {
-    margin-top: 1rem;
-    color: #005d7a;
-  }
-
-  .tarjeta-proyecto p {
-    font-size: 0.95rem;
-    color: #64748b;
-  }
-
-  .etiquetas-proyecto {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 0.8rem;
-  }
-
-  .etiquetas-proyecto p {
-    color: black;
-    font-size: small;
-    border-radius: 10px;
-    background-color: #e3e3e3;
-    padding: 4px 10px;
-  }
-
-  .etiquetas-proyecto > p:hover {
-    background-color: #005d7a;
-    color: white;
-    cursor: default;
-  }
-
-  .etiquetas-proyecto div {
-    background: #e0f2fe;
-    color: #005d7a;
-    padding: 0.25rem 0.7rem;
-    border-radius: 15px;
-    font-size: 0.75rem;
-  }
-
-  /* Medidas para movil, tablet,.. */
-  @media (max-width: 600px) {
-    .botones-proyectos {
-      opacity: 1;
-      background: rgba(15, 23, 42, 0.45);
-    }
-  }
-</style>

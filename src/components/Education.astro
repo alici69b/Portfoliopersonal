@@ -1,124 +1,36 @@
-<section class="educacion">
-  <h2>Mi <b>Educación</b></h2>
-  <p class="subtitulo">
+<section class="educacion font-sans py-24 px-6 text-center max-w-[900px] mx-auto">
+  <h2 class="text-[2.5rem] mb-4">
+    <b> Mi <b class="text-[#005d7a]">Educación</b></b>
+  </h2>
+  <p class="subtitulo max-w-[700px] mt-6 mx-auto mb-12 text-[#666] text-lg">
     Estos son mis estudios hasta ahora, seguiré estudiando por algunos años más:
   </p>
 
-  <div class="lista-educacion">
-    <div class="box-educacion">
-      <div class="tarjeta">
-        <div class="fecha">2025 - Actualidad</div>
-        <h3>Grado Superior Desarrollo Web</h3>
-        <p class="lugar">IES La Arboleda (Lepe/Huelva)</p>
-        <p>
-          Profundizando en tecnologías backend y frontend, bases de datos y
-          despliegue de aplicaciones.
-        </p>
+  <div class="lista-educacion flex flex-col gap-8">
+    
+    <div class="tarjeta p-8 border border-[#c8c8c8] rounded-xl bg-white text-left transition-all duration-300 ease-in-out hover:border-[#005d7a] hover:shadow-[0_0_30px_#66666641] transform hover:-translate-y-1">
+      <div class="fecha text-center text-sm font-bold rounded-lg bg-[#005d7a] text-white py-1.5 mb-4 tracking-wide">
+        2025 - Actualidad
       </div>
+      <h3 class="text-xl font-bold text-[#0f172a] mb-1">Grado Superior Desarrollo Web</h3>
+      <p class="lugar text-[#444] font-medium mb-4">IES La Arboleda (Lepe/Huelva)</p>
+      <p class="text-[#666] leading-relaxed">
+        Profundizando en tecnologías backend y frontend, bases de datos y
+        despliegue de aplicaciones.
+      </p>
     </div>
 
-    <div class="box-educacion">
-      <div class="tarjeta">
-        <div class="fecha">2023 - 2025</div>
-        <h3>Grado Medio Sistemas Mircroinformáticos y Redes</h3>
-        <p class="lugar">IES La Arboleda(Lepe/Huelva)</p>
-        <p>
-          Profundiza en la instalación, configuración y mantenimiento de equipos
-          informáticos y redes locales.
-        </p>
+    <div class="tarjeta p-8 border border-[#c8c8c8] rounded-xl bg-white text-left transition-all duration-300 ease-in-out hover:border-[#005d7a] hover:shadow-[0_0_30px_#66666641] transform hover:-translate-y-1">
+      <div class="fecha text-center text-sm font-bold rounded-lg bg-[#005d7a] text-white py-1.5 mb-4 tracking-wide">
+        2023 - 2025
       </div>
+      <h3 class="text-xl font-bold text-[#0f172a] mb-1">Grado Medio Sistemas Microinformáticos y Redes</h3>
+      <p class="lugar text-[#444] font-medium mb-4">IES La Arboleda (Lepe/Huelva)</p>
+      <p class="text-[#666] leading-relaxed">
+        Profundiza en la instalación, configuración y mantenimiento de equipos
+        informáticos y redes locales.
+      </p>
     </div> 
-    </div>
+
   </div>
 </section>
-
-<style>
-  * {
-    font-family:
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .educacion {
-    padding: 4rem 1.5rem;
-    max-width: 800px;
-    margin: auto;
-    margin-top: 5%;
-    text-align: center;
-  }
-
-  .educacion h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  .educacion h2 b {
-    color: #005d7a;
-  }
-  .subtitulo {
-    max-width: 700px;
-    margin: 1.5rem auto 3rem;
-    color: #666666;
-    font-size: large;
-  }
-
-  .box-educacion {
-    text-align: left;
-    margin-bottom: 2.5rem;
-    position: relative;
-  }
-
-  .box-educacion:hover {
-    border-color: #005d7a;
-    box-shadow: 0px 0px 30px #66666641;
-  }
-
-  .tarjeta {
-    padding: 1.5rem;
-    border: 1px solid #c8c8c8;
-    border-radius: 10px;
-    transition: 0.3s;
-  }
-
-  .tarjeta:hover {
-    border-color: #005d7a;
-    transform: translateY(-5px);
-  }
-
-  .fecha {
-    text-align: center;
-    font-size: small;
-    border-radius: 10px;
-    background-color: #005d7a;
-    color: white;
-    cursor: default;
-    padding: 4px 10px;
-  }
-
-  .tarjeta h3 {
-    margin-top: 10px;
-    color: #0f172a;
-  }
-
-  .lugar {
-    color: #005d7a;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-
-  .tarjeta p {
-    color: #666;
-    font-size: 0.95rem;
-  }
-</style>

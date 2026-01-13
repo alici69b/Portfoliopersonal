@@ -1,6 +1,9 @@
 ---
 
+import "../styles/global.css";
+
 import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro"
 import Header from "../components/Header.astro";
 import AboutMe from "../components/AboutMe.astro";
 import Education from "../components/Education.astro";
@@ -13,6 +16,7 @@ import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
+  <Navbar />
   <Header />
   <AboutMe />
   <Education />
