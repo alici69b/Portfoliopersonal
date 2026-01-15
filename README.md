@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Astro Starter Kit: Basics
+Portfolio Alicia Alonso
 
 ```sh
 npm create astro@latest -- --template basics
