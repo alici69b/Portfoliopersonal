@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-Portfolio Alicia Alonso
+
+## Portfolio Alicia Alonso
 
 ```sh
 npm create astro@latest -- --template basics
