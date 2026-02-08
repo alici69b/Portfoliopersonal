@@ -1,6 +1,5 @@
 # 👩‍💻 Portafolio Personal - Alicia Alonso
 
-[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Faliciaalonsoportfolio.vercel.app&label=Online&style=flat-square)](https://aliciaalonsoportfolio.vercel.app)
 ![Astro](https://img.shields.io/badge/Astro-0C141E?style=for-the-badge&logo=astro&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
