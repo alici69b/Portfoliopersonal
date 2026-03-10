@@ -1,61 +1,109 @@
-<section class="inicio font-sans py-50 px-6 text-center">
-  <div class="inicio-contenedor flex justify-center mx-8">
-    <p
-      class="bienvenida bg-[#7ed2e93e] text-[#005d7a] px-6 py-2.5 rounded-[30px] text-[1.1rem]"
+<section class="inicio font-sans min-h-screen px-6 flex items-center">
+  <div
+    class="max-w-6xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-6 items-center py-24 md:py-0"
+  >
+    <!-- Columna izquierda -->
+    <div
+      class="flex flex-col gap-6 text-center md:text-left items-center md:items-start"
     >
-      ¡Bienvenido a mi porfolio!
-    </p>
-  </div>
+      <div class="animate-fade-in-down">
+        <p
+          class="bienvenida inline-flex items-center gap-2 bg-[#7ed2e93e] text-[#005d7a] px-5 py-2 rounded-[30px] text-sm font-medium"
+        >
+          ¡Bienvenido a mi porfolio!
+        </p>
+      </div>
 
-  <h2 class="quiensoy text-[3.5rem] my-1">
-    <b>Soy <b class="nombre text-[#005d7a]">Alicia Alonso</b></b>
-  </h2>
-
-  <div class="descripcion max-w-2xl mt-0 mx-auto mb-8 text-[#666] text-lg">
-    <p class="quesoy m-2 text-[#666] text-[23px]">
-      Desarrolladora de aplicaciones web
-    </p>
-    <p>
-      Diseño experiencias digitales cuidando cada detalle, buscando siempre el
-      equilibrio entre lo visual y lo funcional.
-    </p>
-  </div>
-  <div class="botones flex flex-col gap-4 items-center">
-    <div class="botones-redessociales flex gap-4 flex-wrap justify-center">
-      <a
-        href="https://github.com/alici69b"
-        target="_blank"
-        class="inline-flex items-center gap-2 px-6 py-2.5 rounded-[30px] no-underline text-white bg-[#005d7a] transition-all duration-300 ease-in-out whitespace-nowrap hover:bg-[#005d7a] hover:text-white hover:scale-105"
-        aria-label="Perfil de GitHub"
+      <h2
+        class="text-6xl sm:text-5xl lg:text-6xl font-bold leading-tight animate-fade-in-down-1"
       >
-        <img
-          src="/github-svgrepo-com.svg"
-          alt="Acceder a github"
-          class="w-4.5 h-4.5"
-        />
-        GitHub
-      </a>
+        Soy <span class="text-[#005d7a]">Alicia<br />Alonso</span>
+      </h2>
 
-      <a
-        href="https://www.linkedin.com/in/alicia-alonso-aguaded-5236933a3/"
-        target="_blank"
-        class="inline-flex items-center gap-2 px-6 py-2.5 rounded-[30px] no-underline text-[#005d7a] border border-[#005d7a] transition-all duration-300 ease-in-out whitespace-nowrap hover:bg-[#005d7a] hover:text-white hover:scale-105"
-        aria-label="Perfil de Linkedin"
-      >
-        <img
-          src="/linkedin-svgrepo-com.svg"
-          alt="acceder a linkedin"
-          class="w-4.5 h-4.5"
-        />
-        LinkedIn
-      </a>
+      <div class="flex flex-col gap-3 animate-fade-in-down-2">
+        <p
+          class="text-[#005d7a] text-xl sm:text-2xl font-semibold tracking-wide"
+        >
+          Desarrolladora de aplicaciones web
+        </p>
+        <p class="text-[#666] text-base sm:text-lg leading-relaxed max-w-md">
+          Diseño experiencias digitales cuidando cada detalle, buscando siempre
+          el equilibrio entre lo visual y lo funcional.
+        </p>
+      </div>
+
+      <div class="flex gap-4 flex-wrap animate-fade-in-down-3">
+        <a
+          href="https://github.com/alici69b"
+          target="_blank"
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-[30px] no-underline text-white bg-[#005d7a] transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-[#005d7a]/25 text-sm font-medium"
+          aria-label="Perfil de GitHub"
+        >
+          <img
+            src="/github-svgrepo-com.svg"
+            alt="Acceder a github"
+            class="w-4.5 h-4.5"
+          /> GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/alicia-alonso-aguaded-5236933a3/"
+          target="_blank"
+          class="inline-flex items-center gap-2 px-6 py-2.5 rounded-[30px] no-underline text-[#005d7a] border border-[#005d7a] transition-all duration-300 ease-in-out whitespace-nowrap hover:scale-105 hover:text-white hover:bg-[#005d7a] hover:shadow-lg hover:shadow-[#005d7a]/25 text-sm font-medium"
+          aria-label="Perfil de Linkedin"
+        >
+          <img
+            src="/linkedin-svgrepo-com.svg"
+            alt="acceder a linkedin"
+            class="w-4.5 h-4.5"
+          /> LinkedIn
+        </a>
+      </div>
     </div>
-    <div class="flecha flex justify-center mt-6">
-      <img
-        src="/bottom-svgrepo-com.svg"
-        alt="flecha_hacia_abajo"
-        class="w-15.5 h-20 justify-center items-center animate-bounce"
-      />
+
+    <!-- Columna derecha -->
+    <div
+      class="hidden md:flex justify-center items-center animate-fade-in-down-2"
+    >
+      <div class="relative">
+        <div
+          class="absolute inset-0 rounded-full bg-[#7ed2e930] scale-110 blur-2xl"
+        >
+        </div>
+
+        <div
+          class="relative w-60 h-60 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-[#005d7a]/20 shadow-2xl shadow-[#005d7a]/10"
+        >
+          <div
+            class="w-full h-full bg-linear-to-br from-[#7ed2e950] to-[#005d7a20] flex items-center justify-center"
+          >
+            <img src="/fotoAlicia.png" class="text-9xl" />
+          </div>
+        </div>
+
+        <div
+          class="absolute -top-4 -right-6 bg-white rounded-2xl px-4 py-3 shadow-lg shadow-[#005d7a]/10 border border-[#eee]"
+        >
+          <p class="text-xs text-[#999]">Estado</p>
+          <div class="flex items-center gap-1.5 mt-0.5">
+            <span class="w-2 h-2 rounded-full bg-[#005d7a] animate-pulse"
+            ></span>
+            <p class="text-[#333] font-semibold text-sm">Aprendiendo</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<style>
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
